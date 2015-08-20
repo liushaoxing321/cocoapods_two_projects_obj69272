@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12738884AB0185F5B489E343 /* libPods-myapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C424E6456DF92B6588B54DBB /* libPods-myapp.a */; };
 		D1CBA98C1B8576FB00030BB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBA98B1B8576FB00030BB5 /* main.m */; };
 		D1CBA98F1B8576FB00030BB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBA98E1B8576FB00030BB5 /* AppDelegate.m */; };
 		D1CBA9921B8576FB00030BB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBA9911B8576FB00030BB5 /* ViewController.m */; };
@@ -16,6 +15,7 @@
 		D1CBA99A1B8576FB00030BB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1CBA9981B8576FB00030BB5 /* LaunchScreen.xib */; };
 		D1CBA9A61B8576FB00030BB5 /* myappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBA9A51B8576FB00030BB5 /* myappTests.m */; };
 		D1CBA9B41B8577A700030BB5 /* mylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CBA9B31B8577A700030BB5 /* mylib.framework */; };
+		D1CBA9B61B85828300030BB5 /* libPods-myapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CBA9B51B85828300030BB5 /* libPods-myapp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,7 @@
 		D1CBA9A41B8576FB00030BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CBA9A51B8576FB00030BB5 /* myappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myappTests.m; sourceTree = "<group>"; };
 		D1CBA9B31B8577A700030BB5 /* mylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mylib.framework; path = "../mylib/build/Debug-iphoneos/mylib.framework"; sourceTree = "<group>"; };
+		D1CBA9B51B85828300030BB5 /* libPods-myapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-myapp.a"; path = "/Users/everettjf/Xcode/myframeworktest1/Pods/../build/Debug-iphoneos/libPods-myapp.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CBA9B61B85828300030BB5 /* libPods-myapp.a in Frameworks */,
 				D1CBA9B41B8577A700030BB5 /* mylib.framework in Frameworks */,
-				12738884AB0185F5B489E343 /* libPods-myapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +72,7 @@
 		397EE56F1C18F22D5C244A96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1CBA9B51B85828300030BB5 /* libPods-myapp.a */,
 				D1CBA9B31B8577A700030BB5 /* mylib.framework */,
 				C424E6456DF92B6588B54DBB /* libPods-myapp.a */,
 			);
@@ -417,6 +419,10 @@
 				);
 				INFOPLIST_FILE = myapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/everettjf/Xcode/myframeworktest1/Pods/../build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -432,6 +438,10 @@
 				);
 				INFOPLIST_FILE = myapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/everettjf/Xcode/myframeworktest1/Pods/../build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
