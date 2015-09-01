@@ -16,7 +16,6 @@
 		D1CBA9A61B8576FB00030BB5 /* myappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBA9A51B8576FB00030BB5 /* myappTests.m */; };
 		D1CBA9B41B8577A700030BB5 /* mylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CBA9B31B8577A700030BB5 /* mylib.framework */; };
 		D1CBA9B61B85828300030BB5 /* libPods-myapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CBA9B51B85828300030BB5 /* libPods-myapp.a */; };
-		D86E782BD8930DFCFE99CBF5 /* Pods_myapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A9A978B314B3797EA38FA5 /* Pods_myapp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 			files = (
 				D1CBA9B41B8577A700030BB5 /* mylib.framework in Frameworks */,
 				D1CBA9B61B85828300030BB5 /* libPods-myapp.a in Frameworks */,
-				D86E782BD8930DFCFE99CBF5 /* Pods_myapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

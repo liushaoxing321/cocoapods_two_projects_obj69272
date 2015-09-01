@@ -7,7 +7,9 @@ objc[69590]: Class AFHTTPRequestOperation is implemented in both /Users/everettj
 ...
 ```
 
-**I got a solution**
-- just add "use_frameworks!" to Podfile
+# solution 1
+- mylib -> TARGETS(mylib) -> Build Settings -> Linking -> Mach-O Type : **Static Library**
 
+# solution 2
+- just add "use_frameworks!" to Podfile
 - for more information : view [this](http://blog.cocoapods.org/CocoaPods-0.36/)
