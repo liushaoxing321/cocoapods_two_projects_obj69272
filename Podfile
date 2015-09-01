@@ -1,7 +1,9 @@
 workspace 'myapp'
+xcodeproj 'myapp/myapp.xcodeproj'
 
 platform :ios,'7.0'
-xcodeproj 'myapp/myapp.xcodeproj'
+inhibit_all_warnings!
+use_frameworks!
 
 target :myapp do
     xcodeproj 'myapp/myapp.xcodeproj'
